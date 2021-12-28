@@ -1,0 +1,4 @@
+def map2(fns,iters):
+  # maps multiple functions to iterables
+  for fn,item in zip(fns,iters):
+    yield fn(item)
